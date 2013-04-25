@@ -1,9 +1,9 @@
 function getFileSystem(){
     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem){ // success get file system
         var sdcard = fileSystem.root;
-        sdcard.getDirectory('vv',{create:false}, function(dcim){
+        sdcard.getDirectory('dcim',{create:false}, function(dcim){
             var gallery = $('#gallery');
-            listDir(vv, gallery);
+            listDir(dcim, gallery);
         }, function(error){
             alert(error.code);
         })
