@@ -1,3 +1,17 @@
+// handling document ready and phonegap deviceready
+window.addEventListener('load', function () {
+    document.addEventListener('deviceready', onDeviceReady, false);
+}, false);
+
+var images = new Array();
+
+// Phonegap is loaded and can be used
+function onDeviceReady(){
+    getFileSystem();
+    showImage();
+}
+
+/* make operations on the file system */
 function getFileSystem(){
     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem){ // success get file system
         var sdcard = fileSystem.root;
@@ -12,12 +26,12 @@ function getFileSystem(){
     });
 }
 
-
+/* list on console the content of a directory*/
 function listDir(directoryEntry, domParent){
     $.mobile.showPageLoadingMsg(); // show loading message
-     
+    
     var directoryReader = directoryEntry.createReader();
-         
+        
     directoryReader.readEntries(function(entries){ // success get files and folders
         for(var i=0; i<entries.length; ++i){
             if( i%2 == 0) domParent.append('<div class="ui-block-a"><div class="thumbnail"><img src="'+entries[i].fullPath+'" title="'+entries[i].name+'" /></div></div>');
@@ -37,7 +51,7 @@ function showImage(){
         var title = $(this).attr('title');
         $('#picture h1').text(title);
         $('#pic').html($(this).clone());
-         
+        
         $.mobile.changePage($('#picture'));
     });
 }
