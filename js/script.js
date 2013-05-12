@@ -15,9 +15,9 @@ function onDeviceReady(){
 function getFileSystem(){
     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem){ // success get file system
         var sdcard = fileSystem.root;
-        sdcard.getDirectory('vv',{create:false}, function(vv){
+        sdcard.getDirectory('verlorenverhalen', {create:false}, function(verlorenverhalen){
             var gallery = $('#gallery');
-            listDir(vv, gallery);
+            listDir(verlorenverhalen, gallery);
         }, function(error){
             alert(error.code);
         })
