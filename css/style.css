@@ -1,3 +1,98 @@
+
+.ui-page {
+        background:url(../images/background.gif) !important;
+    }
+
+.ui-bar-a {
+        background:url(../images/balk.png) !important;
+        border: none;
+        height: 64px;
+    }
+}
+#bammtv-head
+
+{
+
+  padding-top: 30px;
+
+}
+
+.ui-grid-d >:nth-child(n) {
+width: 25%;
+display: inline;
+}
+
+.ui-grid-d >:nth-child(n) {
+width: 25%;
+display: inline;
+}
+.ui-navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+position: absolute;
+display: block;
+border: 0;
+max-width: 100%;
+overflow: hidden;
+bottom: 0px;
+width: 100%;
+}
+
+.ui-btn-up-a {
+background-image: none;
+background: none;
+border: none;
+
+}
+#bammtv-logo
+
+{
+
+ margin: 20px 0 1px;
+
+ text-align: center;
+
+    }
+  #styles, #add-tab {
+        float: left;
+        margin-top: 10px;
+        width: 400px;
+      }
+ 
+      #styles label,
+      #add-tab label {
+        display: inline-block;
+        width: 130px;
+    }
+.footer-wrapper {
+
+position: absolute;
+bottom: 0px;
+width: 100%;
+}
+.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px; !important;}
+    .nav-glyphish-example .ui-btn .ui-icon { width: 35px!important; height: 35px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: none !important; border-radius: none !important; }
+    #kaart .ui-icon { background: url(../images/mapicon.png) 50% 50% no-repeat; background-size: 34px 32px; }
+    #layar .ui-icon { background: url(../images/ar.png) 50% 50% no-repeat; background-size: 35px 27px;  }
+    #logboek .ui-icon { background: url(../images/lb.png) 50% 50% no-repeat; background-size: 35px 27px;  }
+    .navbar ul{
+      margin: 0 auto;
+      overflow: hidden; /* contain the floats */
+      width: 300px;
+}
+.navbar li{
+      display: block;
+      float: left; /* inline-block without the float should work fine too */
+      width: 33%
+}
+
+.ui-btn-up-a .ui-btn-up-b .ui-btn-up-c {
+background: rgb(0,0,0,0.0);
+}
+
+
+
 img{
     width:100%;
 }
